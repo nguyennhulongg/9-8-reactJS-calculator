@@ -136,7 +136,25 @@ function App() {
           return (
             <Button 
               key={i}
-              className = {btn === "=" ? "equals" : ""}
+              className = {
+                btn === "=" 
+                ? "equals" 
+                : btn === "+" 
+                ? "calculationSign" 
+                : btn === "-"
+                ? "calculationSign"
+                : btn === "x"
+                ? "calculationSign"
+                : btn === "/"
+                ? "calculationSign"
+                : btn === "C"
+                ? "featureSign"
+                : btn === "+-"
+                ? "featureSign"
+                : btn === "%"
+                ? "featureSign"
+                : ""
+              }
               value = {btn}
               onClick = {
                 btn === "C"

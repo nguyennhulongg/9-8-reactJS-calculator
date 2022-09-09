@@ -1,23 +1,39 @@
 button {
   border: none;
-  background-color: #c54961;
+  background-color: #2a2929;
   font-size: 24px;
   color: rgb(255, 255, 255);
-  font-weight: bold;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 40%;
   outline: none;
 }
 
 button:hover {
-  background-color: #af4c60dc;
+  background-color: #353535;
 }
 
 .equals {
   grid-column: 3 / 5;
   background-color: rgb(243, 61, 29);
+  border-radius: 15px;
 }
 
-.equals:hover {
+.equals:hover{
   background-color: rgb(228, 39, 15);
+}
+
+.calculationSign {
+  background-color: rgb(249, 108, 0);
+}
+
+.calculationSign:hover {
+  background-color: rgb(249, 124, 0);
+}
+
+.featureSign {
+  background-color: #4a4a4a;
+}
+
+.featureSign:hover {
+  background-color: #4f4e4e;
 }
