@@ -1,9 +1,9 @@
 import React, { useState } from 'react';  
 
-import Wrapper from './components/Wrapper';
-import Screen from './components/Screen';
+import Wrapper from './components/Wrapper/Wrapper';
+import Screen from './components/Screen/Screen';
 import ButtonBox from './components/ButtonBox';
-import Button from './components/Button';
+import Button from './components/Button/Button';
 
 const btnValues = [
   ["C", "+-", "%", "/"],
@@ -22,7 +22,7 @@ const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
 function App() {
 
-  let [calc, setCalc] = useState({
+  const [calc, setCalc] = useState({
     sign: "",
     num: 0,
     result: 0, 
@@ -174,7 +174,7 @@ function App() {
             />
           );
         })}  
-      
+        
       </ButtonBox>
     </Wrapper>
   );
