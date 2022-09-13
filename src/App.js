@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Wrapper from './components/Wrapper/Wrapper';
 import Screen from './components/Screen/Screen';
-import ButtonBox from './components/ButtonBox';
+import ButtonBox from './components/ButtonBox/ButtonBox';
 import Button from './components/Button/Button';
 
 const btnValues = [
